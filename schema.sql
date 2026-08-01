@@ -14,3 +14,4 @@ CREATE TABLE IF NOT EXISTS `Users` (
     `Email` VARCHAR(100) NOT NULL UNIQUE,
     `Password` VARCHAR(255) NOT NULL
 );
+//comment mahidul headquater
