@@ -65,3 +65,21 @@ CREATE TABLE Favorites (
     FOREIGN KEY (Game_ID) REFERENCES Games(Game_ID),
     UNIQUE (User_ID, Game_ID)
 );
+
+INSERT INTO `Genres` (`Genre_ID`, `Genre_Name`) VALUES 
+(1, 'Action'), 
+(2, 'RPG'), 
+(3, 'Adventure'), 
+(4, 'Strategy'), 
+(5, 'Sports');
+
+INSERT INTO `Platforms` (`Platform_ID`, `Platform_Name`) VALUES 
+(1, 'PC'), 
+(2, 'PlayStation 5'), 
+(3, 'Xbox Series X'), 
+(4, 'Nintendo Switch');
+
+INSERT INTO `AgeRatings` (`AgeRating_ID`, `Rating_Name`, `Description`) VALUES 
+(1, 'E', 'Everyone - Content is generally suitable for all ages.'),
+(2, 'T', 'Teen - Content is generally suitable for ages 13 and up.'),
+(3, 'M', 'Mature 17+ - Content is generally suitable for ages 17 and up.');
