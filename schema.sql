@@ -182,3 +182,6 @@ INSERT INTO `Games` (`Title`, `Genre_ID`, `Platform_ID`, `AgeRating_ID`, `Releas
 ('Windjammers 2', 5, 4, 1, 2022, 'Fast-paced arcade flying disc game combining hand-drawn graphics and mechanics.', 'default_cover.jpg'),
 ('AO Tennis 2', 5, 2, 1, 2020, 'A tennis experience designed by and for its community of sports fans.', 'default_cover.jpg'),
 ('Super Mega Baseball 4', 5, 3, 1, 2023, 'More than 200 larger-than-life former pros hit the field alongside favorite series characters.', 'default_cover.jpg');
+
+INSERT INTO `Admins` (`Username`, `Email`, `Password`) 
+VALUES ('admin', 'admin@vault.com', 'admin123');
