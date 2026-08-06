@@ -14,3 +14,19 @@ CREATE TABLE `Users` (
     `Email` VARCHAR(100) NOT NULL UNIQUE,
     `Password` VARCHAR(255) NOT NULL
 );
+
+CREATE TABLE `Genres` (
+    `Genre_ID` INT AUTO_INCREMENT PRIMARY KEY,
+    `Genre_Name` VARCHAR(50) NOT NULL UNIQUE
+);
+
+CREATE TABLE `Platforms` (
+    `Platform_ID` INT AUTO_INCREMENT PRIMARY KEY,
+    `Platform_Name` VARCHAR(50) NOT NULL UNIQUE
+);
+
+CREATE TABLE `AgeRatings` (
+    `AgeRating_ID` INT AUTO_INCREMENT PRIMARY KEY,
+    `Rating_Name` VARCHAR(20) NOT NULL UNIQUE,
+    `Description` TEXT
+);
