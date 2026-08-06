@@ -1,0 +1,16 @@
+CREATE DATABASE `vault_db`;
+USE `vault_db`;
+
+CREATE TABLE `Admins` (
+    `Admin_ID` INT AUTO_INCREMENT PRIMARY KEY,
+    `Username` VARCHAR(50) NOT NULL UNIQUE,
+    `Email` VARCHAR(100) NOT NULL UNIQUE,
+    `Password` VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE `Users` (
+    `User_ID` INT AUTO_INCREMENT PRIMARY KEY,
+    `Username` VARCHAR(50) NOT NULL UNIQUE,
+    `Email` VARCHAR(100) NOT NULL UNIQUE,
+    `Password` VARCHAR(255) NOT NULL
+);
